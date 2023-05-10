@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from 'react'
-import Step1Video from '../Video/Step1.mp4'
-
-export default function Step1CHome() {
-
+import Step2Video from '../Video/Step2.mp4'
+export default function Step8CHome() {
     const videoRef = useRef(null);
 
     useEffect(() => {
@@ -24,18 +22,16 @@ export default function Step1CHome() {
                         tablet:w-[100%]
                         mobile:w-[100%]
                     '>
-                        <h5 className='text-[18px] font-semibold mb-[16px]'>Step 1</h5>
-                        <h1 className='text-[48px] leading-[54px] font-semibold mb-[24px]'>Tell us about your place</h1>
-                        <p className='font-normal text-[18px]'>In this step, we'll ask you which type of property you have
-                            and if guests will book the entire place or just a room.
-                            Then let us know the location and how many guests can stay.
+                        <h5 className='text-[18px] font-semibold mb-[16px]'>Step 2</h5>
+                        <h1 className='text-[48px] leading-[54px] font-semibold mb-[24px] w-[70%]'>Make your place stand out</h1>
+                        <p className='font-normal text-[18px] w-[90%]'>In this step, you’ll add some of the amenities your place offers, plus 5 or more photos. Then, you’ll create a title and description.
                         </p>
                     </div>
                     <div className='w-[50%] tablet:w-[100%]
                         mobile:w-[100%]'>
                         <video ref={videoRef} crossOrigin='anonymous' width="100%" height="421" autoPlay="" className='object-cover' preload='auto' webkit-playsinline="true"
                             playsinline="true" muted="muted">
-                            <source src={Step1Video} type="video/mp4" />
+                            <source src={Step2Video} type="video/mp4" />
                         </video>
                     </div>
                 </div>

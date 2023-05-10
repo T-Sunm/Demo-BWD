@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 export default function ChooDesPl({ title, icon, selected, setselected }) {
 
     return (
         <button className='rounded-[8px] border-[2px] border-colorButtonHeader p-[16px] w-[100%] h-[105px]
-        flex flex-col ease-in duration-200
+        flex flex-col ease-in duration-200 
         mobile:w-[40vw]
         hover:border-[2px] hover:border-black
         '
@@ -14,7 +14,7 @@ export default function ChooDesPl({ title, icon, selected, setselected }) {
             onClick={() => setselected(title)}
         >
             <div><img src={icon} className='w-[45px] h-[45px]' alt='Iscon' /></div>
-            <div className='font-semibold'>{title}</div>
+            <div className='font-semibold '>{title}</div>
         </button>
 
 
