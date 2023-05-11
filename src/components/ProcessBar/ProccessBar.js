@@ -20,7 +20,7 @@ function ProgressBar({steps, currentStep, setCurrentStep}) {
           className='py-4 px-8 bg-whiter text-[#222222] font-semibold text-[16px] rounded-xl inline ml-8 underline'
           onClick={() =>
             setCurrentStep((prevStep) =>
-              prevStep <= steps.length && prevStep > 0 ? prevStep - 1 : prevStep
+              prevStep <= steps.length && prevStep > 1 ? prevStep - 1 : prevStep
             )
           }
         >
