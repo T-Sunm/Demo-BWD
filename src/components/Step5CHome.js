@@ -28,7 +28,7 @@ export default function Step5CHome() {
 
 
     return (
-        <div className='w-[98vw] px-[80px]'>
+        <div className='w-[98vw] px-[80px] mt-[72px] mb-[80px] py-10'>
             <div className='w-[60%] ml-auto mr-auto pl-[70px] '>
                 <div>
                     <div>

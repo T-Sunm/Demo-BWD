@@ -17,7 +17,7 @@ export default function Step6CHome() {
                         mobile:text-[26px]
                         '
                     >
-                        What kind of bathrooms are available to &nbsp;  &nbsp; guests?
+                        What kind of bathrooms are available to guests?
                     </h1>
                     <div>
                         <div className='flex flex-col justify-between'>
