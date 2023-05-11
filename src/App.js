@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import MapView from './components/MapView';
+import ProcessBar from './components/ProcessBar'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=''>
+      {/* <div className='w-[500px] h-[500px] rounded-2xl overflow-hidden'>
+      <MapView />
+      </div> */}
+        <ProcessBar />
     </div>
   );
 }
