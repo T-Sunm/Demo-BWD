@@ -6,7 +6,7 @@ export default function Step7CHome() {
 
     const [selected, setselected] = useState('');
     return (
-        <div>
+        <div className='mt-[100px]'>
             <div className='w-[98vw] px-[80px] mt-10'>
                 <div className='w-[60%] ml-auto mr-auto pl-[70px] 
                     mobile:pl-[0px] 

@@ -9,7 +9,7 @@ export default function Step2CHome() {
 
 
     return (
-        <div className='w-[98vw] px-[80px]'>
+        <div className='w-[98vw] px-[80px] mt-[72px]'>
             <div className='w-[60%] ml-auto mr-auto pl-[70px] '>
                 <div className='flex flex-col px-10'>
                     <div className='mb-[32px] h-[72px] '>

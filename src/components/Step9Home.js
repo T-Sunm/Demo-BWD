@@ -11,6 +11,8 @@ export default function Step9Home() {
     return (
         <div className='w-[98vw] px-[80px] 
                         mobile:px-0
+                        mt-[72px]
+                        mb-[80px]
         '>
             <div className='w-[60%] ml-auto mr-auto pl-[70px]
             mobile:pl-0  
