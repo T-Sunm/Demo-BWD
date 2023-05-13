@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {steps[currentStep - 1].component}
+      {/* {steps[currentStep - 1].component} */}
       {/* <Step1CHome /> */}
       {/* <Step2CHome /> */}
       {/* <Step3CHome /> */}
@@ -37,9 +37,9 @@ function App() {
       {/* <Step6CHome /> */}
       {/* <Step7CHome /> */}
       {/* <Step8CHome /> */}
-      {/* <Step9Home /> */}
+      <Step9Home />
 
-      <ProcessBar steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep}/>
+      {/* <ProcessBar steps={steps} currentStep={currentStep} setCurrentStep={setCurrentStep}/> */}
     </div>
   );
 }
