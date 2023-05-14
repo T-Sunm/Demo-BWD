@@ -1,4 +1,3 @@
-import { useState } from 'react';
 
 function ProgressBar({steps, currentStep, setCurrentStep}) {
   
@@ -8,6 +7,7 @@ function ProgressBar({steps, currentStep, setCurrentStep}) {
       <div className='w-full bg-gray-400 h-1.5 mb-2 flex'>
         {steps.map((item) => (
           <div
+          key={item.number}
             className={`h-1.5 bg-transparent mb-2 transition-all duration-700 ease-out ${
               item.number <= currentStep && 'bg-[#222222]'
             }`}

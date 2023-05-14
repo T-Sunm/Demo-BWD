@@ -1,5 +1,11 @@
-import React from 'react'
-export default function ChooDesPl({ title, icon, selected, setselected }) {
+import React,{useState} from 'react'
+export default function ChooDesPl({ title, icon, chooseOptions }) {
+    const [selected, setselected] = useState('')
+
+    function selectOptionHandler(){
+        setselected(title)
+        chooseOptions(title)
+    }
 
     return (
         <button className='rounded-[8px] border-[2px] border-colorButtonHeader p-[16px] w-[100%] h-[105px]
@@ -11,7 +17,7 @@ export default function ChooDesPl({ title, icon, selected, setselected }) {
                 backgroundColor: title === selected && "#F7F7F7",
                 borderColor: title === selected && "black"
             }}
-            onClick={() => setselected(title)}
+            onClick={selectOptionHandler}
         >
             <div><img src={icon} className='w-[45px] h-[45px]' alt='Iscon' /></div>
             <div className='font-semibold '>{title}</div>
