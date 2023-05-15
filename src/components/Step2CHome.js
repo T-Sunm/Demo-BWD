@@ -21,7 +21,7 @@ export default function Step2CHome() {
                                     mobile:grid-cols-1
                     '>
                         {categoriesStep2.map((category) => (
-                            <ChooDesPl title={category.name} icon={category.icon} selected={selected} setselected={setselected} />
+                            <ChooDesPl title={category.name} icon={category.icon} selected={selected} setSelected={setselected} />
                         ))}
                     </div>
                 </div>

@@ -10,12 +10,6 @@ import ChooDesPl from './ChooDesPl';
 export default function Step9Home() {
   // set Active thì để ngoài như này kh đc để trong lớp con
   // để trong lớp con thì khi render ra mỗi class sẽ có 1 state
-  const [options, setOptions] = useState([]);
-
-  function chosenOptionshandler(newOption){
-    setOptions(prev => [...prev, newOption])
-    console.log(options)
-  }
 
   return (
     <div
@@ -54,9 +48,10 @@ export default function Step9Home() {
             >
               {categoriesStep9.map((category) => (
                 <ChooDesPl
+                  key={category.name}
                   title={category.name}
                   icon={category.icon}
-                  chooseOptions={chosenOptionshandler}
+                  type={'many'}
                 />
               ))}
             </div>
@@ -76,9 +71,10 @@ export default function Step9Home() {
             >
               {standoutamenities.map((category) => (
                 <ChooDesPl
+                  key={category.name}
                   title={category.name}
                   icon={category.icon}
-                  chooseOptions={chosenOptionshandler}
+                  type={'selectMany'}
                 />
               ))}
             </div>
@@ -98,9 +94,10 @@ export default function Step9Home() {
             >
               {safetyitems.map((category) => (
                 <ChooDesPl
+                  key={category.name}
                   title={category.name}
                   icon={category.icon}
-                  chooseOptions={chosenOptionshandler}
+                  type={'many'}
                 />
               ))}
             </div>
